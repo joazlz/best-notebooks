@@ -32,7 +32,7 @@ def colnames_df() -> pd.DataFrame:
 # Make sure the filter works as expected.
 def test_filter(raw_input_df):
   filtered = filter_country(raw_input_df)
-  assert filtered.iso_code.drop_duplicates()[0] == "USA"
+  assert filtered.iso_code.drop_duplicates()[0] == "US"
 
 # The test data has NaNs for Daily ICU occupancy; this should get filled to 0.
 def test_pivot(raw_input_df):
